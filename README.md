@@ -17,6 +17,7 @@ This project demonstrates how to:
 ## Run
 ```bash
 npm install
+npm run compile
 npm start
 ```
 
