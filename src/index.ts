@@ -27,7 +27,8 @@ app.get('/auth/callback', passport.authenticate(
     console.log("REQ.QUERY FROM CALLBACK", req.query)
 
     //simulate jwts sending after success login
-    const user = req.user as any
+    //or use the utils for real testing.
+    const user = req.user as any //use for payloads 
     const token = crypto.createHash('sha256').update('test').digest('hex')
     console.log(`${user.displayName} Successfully logged in with Token: ${token}`)
     res.json({token})
