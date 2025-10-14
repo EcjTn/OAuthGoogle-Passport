@@ -26,7 +26,7 @@ Set your environment variables
 
 Then open:
 ```
-http://localhost:3000/auth/google
+http://localhost:<port>/auth/google
 ```
 
 ## Notes
