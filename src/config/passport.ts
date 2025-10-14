@@ -14,7 +14,7 @@ const googleStratOptions: StrategyOptions = {
     clientSecret: clientSecretGoogle,
     callbackURL: 'http://localhost:7777/auth/callback',
 }
-//https://github.com/EcjTn/OAuthGoogle-StratTest.git
+
 passport.use(new GoogleStrategy(googleStratOptions,
     (accessToken, refreshToken, profile, done) => {
         //this part you'd want to check if user
